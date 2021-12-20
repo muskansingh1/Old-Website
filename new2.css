@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Allison&display=swap');
+
+
+#main-header{                /*header properties*/
+   
+    border-bottom: 2px solid #000;
+    border-width: 3px;
+    border-color: rgb(10, 51, 139);
+    position: static;
+    width:100%;
+    background-color: rgba(255,255,255,.5);
+    
+}
+
+
+/*
+
+#main-header::before{
+    content: "";
+    display: block;
+    width: 5px;
+    height: 160px;
+    background-color: black;
+    position: absolute;
+}
+
+*/
+
+
+body{
+    margin: 0px;
+    background-color:rgba(245, 173, 185, 0.87);
+   /* background-image: url("..//images/tree.gif");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size:cover; */
+}
+
+
+
+body h6{               /*more specified-->body-->h6*/
+    margin: 0px;
+    text-align: center;
+    margin-bottom: 10px;
+    padding-bottom: 35px;
+}
+
+#main-table{
+    margin-top: 70px;
+    margin-bottom: 70px;
+    line-height: 20px;
+    margin-right: 70px;
+    width:70%;
+    height: 25%;
+    padding:1px;
+    box-shadow: 2px 2px 1px rgba(0,0,0,.5);
+   
+    
+}
+
+
+table,th,td{
+    border: 1px solid rgb(66, 9, 57);
+    border-collapse: collapse;
+    background-color: rgb(245, 243, 238);
+    padding: 5px;
+    font-size: 14px;   
+    text-align: center; 
+   
+}
+
+
+th{
+    background-color: aquamarine;
+    font-size: 15px;
+    
+}
+
+
+td:hover,th:hover{
+    background-color: rgb(245, 245, 99);
+}
+
+
+tr:nth-child(even){
+    background-color: #f2f2f2;        /*not working */
+}
+
+h1,h2,h3{
+    height: 30px;
+    margin: 0px;
+    text-align: center;
+    text-transform: uppercase;
+    
+}
+
+
+body h3{
+    color: #f00;       /*overwrite*/
+    padding: 0px;       /*Padding exists within the element while the margin exists outside of the element*/
+    margin-bottom: 20px;
+    
+}
+
+
+body h4{
+    text-align: center;
+    background-color: aquamarine;
+    border: 5px solid white;
+}
+
+
+#site-title                             /*h1*/
+{
+    font-family: 'Lobster', cursive;
+    margin-bottom: 50px;
+    color: #70f;
+    padding-top: 10px;
+}
+
+
+
+#top-stories{                /*for the section of articles*/
+    width:1050px;
+    margin:auto;
+    margin-bottom: 80px;
+
+}
+
+article{                   /*for each and every article*/
+    width:311px;
+    height:400px;
+    display:inline-block;                      /*no line breaks here*/
+    border: 1px solid #000;
+    padding: 5px;
+    margin: 5px;
+    background-color: rgb(245, 243, 238);
+    box-shadow: 2px 2px 1px rgba(0,0,0,.5);   /*  | shadow  __ shadow  blur level  and color  */
+  
+    transition: box-shadow 500ms, background 500ms;   /* the transition properties: box shadow will show after 500ms 
+                                                      and background color after 3 seconds*/
+    transition-delay: 100ms;    /* after what time overall transition will begin */
+
+    /* transition: all 1s; */
+  
+}
+
+article:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.7);
+    background-color: rgb(206, 197, 197);
+
+}
+
+
+
+.article-image1{
+    background-image: url("../images/dog1.jpg");
+    width:93%;
+    height:200px;
+    background-size:cover !important;    
+    background-position: center;         /*no use*/
+    border: 1px solid #000;
+    padding: 5px;
+    margin: 5px;
+    margin-left:25px;   
+
+}
+           
+
+.article-image2{ 
+    background-image: url("../images/chocolate_55.jpg") ;
+    width:93%;
+    height:200px;
+    background-size:cover !important;
+    background-position: center;
+    border: 1px dotted #000;
+    padding: 5px;
+    margin: 5px;
+    margin-left:25px;   
+
+
+
+}
+
+
+.article-image3{ 
+    background-image: url("../images/html88.png") ;
+    width:93%;
+    height:200px;
+    background-size:cover !important;
+    background-position: center;
+    border: 1px solid #000;
+    padding: 5px;
+    margin: 5px;
+    margin-left:25px;   
+
+    
+}
+
+
+a{
+    text-decoration: line-through underline overline;     /*trying all properties at once */
+    text-decoration-style: dotted;         /* applies only for underline and overline*/
+    text-decoration-line: none;        /*this is going to apply as it is in the end*/ 
+}
+
+
+
+a:hover, a.more-link:hover,a.bolded-link:hover, a.more-link.bolded-link:hover{
+    font-size: 30px;
+    color: #600;
+}
+
+
+
+a:hover, a.table-head:hover{    /* hover= mouse over link */
+    font-size:20px;
+    color:hotpink;
+}
+
+a:active, a.table-head:active{    /* active= selected link on which we click */
+    color: #604;
+}
+
+
+
+.more-link{
+    font-family: 'Allison', cursive;
+    font-style: italic;
+}
+
+.bolded-link{
+    font-weight: 900;
+}
+
+
+.more-link.bolded-link{
+    color:#f00;         /*it is both italic and have font weight and is even red in color*/
+}
+
+
+.my-input{
+    margin-top: 100px;
+    margin-left: 30px;
+    margin-bottom: 90px;
+    width:95%;
+   /* margin:10px; */
+    padding:10px 20px;
+    border-radius: 10px 20px 5px 30px;
+    border: 1px solid #aaa;
+}
+
+.my-input:focus{
+    background: rgba(213, 231, 235, 0.795);
+    color:rgb(2, 37, 53);
+    outline:none;
+    border: 1px solid #000;
+   
+}
+
+.my-input:hover{
+    background-color:rgba(213, 231, 235, 0.795) ;          /* **************************** */
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.1);
+}
+
+
+a:active, a.more-link:active,a.bolded-link:active, a.more-link.bolded-link:active {
+    opacity: .9;
+    color:blue;
+}
+
+
+.article-image1, .article-image2, .article-image3 {
+    height:250px;
+    width:250px;
+    border-radius: 100px;
+}
+
+
+.refer{
+    letter-spacing: 0px;
+    text-indent: 10px;
+    text-align: center;
+    text-shadow: 5px 5px 8px #000;
+}
+
+
+.my-text{
+    height: 600px;
+    max-height: 200px;   /*max-height needs to be smaller than the height*/
+    overflow:scroll;
+    border:1px solid black;
+    margin: 110px;
+    padding: 20px;
+    background-color: rgb(245, 243, 238);
+    text-align: justify;    /*for making the paragraph start together in the webpage */
+    box-shadow: 2px 2px 1px rgba(0,0,0,.5);
+}
+
+
+
+.topnav{
+    overflow:hidden;
+    background-color: grey;
+}
+
+.topnav a{
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.topnav a:hover{
+    background-color: #ddd;
+    color:black;
+    font-size: 15px;
+}
+
+
+
+
+
+.pagination{
+    display:inline-block;
+
+}
+
+.pagination a{
+    color:#000;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.pagination a.active{
+    color: white;
+    background-color: #4CAF50;
+    font-size: 15px;
+
+}
+
+
+.pagination a:hover:not(.active){
+    background-color: #ddd;
+    font-size: 16px;
+}
